@@ -6,33 +6,33 @@ export default class BootScene extends Phaser.Scene {
     }
 
     preload() {
-        // Spritesheets do Jogador e Inimigo Básico
-        this.load.spritesheet('player_sheet', '/assets/sprites/player_sheet.png', {
+        // Usa caminhos relativos sem barra no início para funcionar no GitHub Pages
+        this.load.spritesheet('player_sheet', 'assets/sprites/player_sheet.png', {
             frameWidth: 48,
             frameHeight: 64
         });
-        this.load.spritesheet('enemy_sheet', '/assets/sprites/enemy_sheet.png', {
+        this.load.spritesheet('enemy_sheet', 'assets/sprites/enemy_sheet.png', {
             frameWidth: 56,
             frameHeight: 72
         });
-        this.load.spritesheet('enemy_lizard', '/assets/sprites/enemy_lizard.png', {
+        this.load.spritesheet('enemy_lizard', 'assets/sprites/enemy_lizard.png', {
             frameWidth: 64,
             frameHeight: 64
         });
 
         // Spritesheets dos Bosses
-        this.load.spritesheet('boss1_sheet', '/assets/sprites/boss1_sheet.png', { frameWidth: 96, frameHeight: 96 });
-        this.load.spritesheet('boss2_sheet', '/assets/sprites/boss2_sheet.png', { frameWidth: 96, frameHeight: 96 });
-        this.load.spritesheet('boss3_sheet', '/assets/sprites/boss3_sheet.png', { frameWidth: 96, frameHeight: 96 });
-        this.load.spritesheet('boss4_sheet', '/assets/sprites/boss4_sheet.png', { frameWidth: 96, frameHeight: 96 });
-        this.load.spritesheet('grande_boss_sheet', '/assets/sprites/grande_boss_sheet.png', { frameWidth: 128, frameHeight: 128 });
+        this.load.spritesheet('boss1_sheet', 'assets/sprites/boss1_sheet.png', { frameWidth: 96, frameHeight: 96 });
+        this.load.spritesheet('boss2_sheet', 'assets/sprites/boss2_sheet.png', { frameWidth: 96, frameHeight: 96 });
+        this.load.spritesheet('boss3_sheet', 'assets/sprites/boss3_sheet.png', { frameWidth: 96, frameHeight: 96 });
+        this.load.spritesheet('boss4_sheet', 'assets/sprites/boss4_sheet.png', { frameWidth: 96, frameHeight: 96 });
+        this.load.spritesheet('grande_boss_sheet', 'assets/sprites/grande_boss_sheet.png', { frameWidth: 128, frameHeight: 128 });
 
         // Armas, Terreno e Drops
-        this.load.image('rapadura', '/assets/sprites/rapadura.png');
-        this.load.image('whip', '/assets/sprites/whip.png');
-        this.load.image('pinga', '/assets/sprites/pinga.png');
-        this.load.image('ferradura', '/assets/sprites/ferradura.png');
-        this.load.image('ground', '/assets/sprites/terreno.png');
+        this.load.image('rapadura', 'assets/sprites/rapadura.png');
+        this.load.image('whip', 'assets/sprites/whip.png');
+        this.load.image('pinga', 'assets/sprites/pinga.png');
+        this.load.image('ferradura', 'assets/sprites/ferradura.png');
+        this.load.image('ground', 'assets/sprites/terreno.png');
     }
 
     create() {
